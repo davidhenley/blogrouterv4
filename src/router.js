@@ -6,7 +6,7 @@ import PostsIndex from './components/PostsIndex';
 const Router = () => (
   <BrowserRouter>
     <div>
-      <Route path="/posts" component={PostsIndex} />
+      <Route path="/" component={PostsIndex} />
     </div>
   </BrowserRouter>
 );
