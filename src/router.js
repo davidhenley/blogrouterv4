@@ -1,13 +1,15 @@
 import React from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import PostsIndex from './components/PostsIndex';
+import PostNew from './components/PostNew';
 
 const Router = () => (
   <BrowserRouter>
-    <div>
+    <Switch>
+      <Route path="/posts/new" component={PostNew} />
       <Route path="/" component={PostsIndex} />
-    </div>
+    </Switch>
   </BrowserRouter>
 );
 
